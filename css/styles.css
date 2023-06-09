@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 41, 49);
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#header{
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: bold;
+  
+}
+
+#victoria_caixa {
+  background-color: #7a7272;
+  border: 1px solid black;
+  height: 420px;
+  overflow: scroll;
+  padding: 5px;
+  margin: 20px;
+  border: 5px solid black;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#victoria_input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid rgb(24, 139, 22);
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  display: block;
+}
+
+#enviar_pergunta {
+  padding: 10px;
+  width: 10%;
+  border: 1px solid black;
+  background-color: #4d8e35;
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+  display: block;
+  
+}
+
+
+footer div{
+  text-align: center;
+}
+
+footer div a{
+  margin: 0 15px;
+}
+
+img{
+  padding: 30px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+
+
+.box_colorida {
+  padding: 3px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.cor_usuario {
+  background-color: #2d352e;
+}
+
+.cor_vic {
+  background-color: #222d4e;
+}
