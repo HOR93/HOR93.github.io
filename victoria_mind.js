@@ -11,8 +11,12 @@ const respostas = {
     'criou ?': 'O Henrique me desenvolveu, sou uma AI com database simples baseada em texto', 'fez ?': 'O Henrique me desenvolveu, sou uma AI com database simples baseada em texto', 'proposito': 'destruir a humani.. auxiliar na melhor forma possível!', 'objetivo': 'auxiliar na melhor forma possível!',
 
     // unb, estudos
-
-    'unb': 'ta complicado né ? Não sou o chat GPT, mas dependendo acho que posso ajuda-lo(a)', 'semestre': 'imagino, muita coisa para estudar né ?', 'professor': 'tem alguns bons e outros que são horríveis',
+    'unb': 'A Universidade de Brasília foi fundada em 1962 e é reconhecida como uma das melhores universidades do Brasil. Oferece diversos cursos de graduação, pós-graduação e programas de pesquisa. A universidade também conta com uma estrutura ampla e moderna, com laboratórios, bibliotecas, centros de pesquisa, eventos culturais, atividades de extensão e contribuindo para o desenvolvimento da comunidade e da região,  Caso queira visitar pessoalmente a universidade, o endereço é: Universidade de Brasília, Campus Darcy Ribeiro, Asa Norte, Brasília - DF, CEP: 70910-900, ou https://www.unb.br/',
+    'cursos': 'A UnB oferece uma porrada de variedade de cursos, abrangendo varias áreas do conhecimento, tais como Ciências Exatas, Ciências Humanas, Ciências Biológicas, Engenharias, Saúde, Artes, entre outras. Alguns dos cursos oferecidos são: Medicina, Direito, Engenharia Civil, mecaninca, florestal, eletrica, Redes e mecatronica, Psicologia, Administração, Ciência da Computação, Biologia, Química, Letras, Economia, entre muitos outros. Além disso, a UnB também possui programas de pós-graduação como mestrado e doutorado, em várias áreas de estudo.',
+    'semestre': 'ta complicado né ? Não sou o chatGPT, mas dependendo acho que posso ajuda-lo(a)', 'professor': 'aposto que tem varios sensacionais e outros que são horríveis',
+    'ru': 'Sempre bem completo, aqui o site do RU na unb: https://ru.unb.br/index.php/cardapio-refeitorio', 'onibus': 'Aqui os horarios dos relacionados a unb: https://boasvindas.unb.br/images/Noticias/2018/Documentos/linhas_urbanas_darcy_ribeiro.pdf',
+    'bce': 'Lugar favorito do Henrique na UNB, aqui o site para você ver como funciona mesmo: https://bce.unb.br/', 'hh': 'Não consegui encontrar nada sobre essas festas, mas acontecem bastante mesmo', 'passe livre': 'procura um posto do semob mais proximo: https://semob.df.gov.br/postos-do-sba/ ou entre em contato com eles https://mobilidade.brb.com.br/passelivre/pages/index.xhtml',
+    'graduação': 'vai ser complicado e exaustivo, mas mantenha a fé', 'teams': 'aqui o Link: https://www.microsoft.com/pt-br/microsoft-teams/log-in', 'aprender': 'aqui o Link: https://aprender3.unb.br/login/index.php', 'sigaa': 'aqui o Link: https://sigaa.unb.br/sigaa/',
 
     // calculo 
 
