@@ -59,12 +59,7 @@ h2{
   font-size: 18px;
   margin: 0 auto;
   display: block;
-  transition: background-color 0.5s ease;
   
-}
-
-#enviar_pergunta:hover {
-  background-color: #64b354;
 }
 
 
