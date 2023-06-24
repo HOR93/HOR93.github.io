@@ -1,5 +1,5 @@
 const respostas = {
-   'Ola': 'opa tudo bem?', 'Bom dia': 'Opa! Bom dia, opa tudo bem?', 'tudo bem': 'Opa! Tudo bom? ', 'Oi': 'oii! tudo bem ?', 'Boa noite': 'boa noite, tudo bem?', 
+   'Olá': 'opa tudo bem?', 'Bom dia': 'Opa! Bom dia, opa tudo bem?', 'tudo bem': 'Opa! Tudo bom? ', 'Oi': 'oii! tudo bem ?', 'Boa noite': 'boa noite, tudo bem?', 
     'Boa tarde': 'boa tarde, tudo bem?', 'ajuda': 'claro, pergunte o que quiser', 'auxilio': 'claro, vou tentar o meu melhor no que fui programada', 'meu nome': 'muito prazer, sou victoria', 
 
     'me chamo': 'muito prazer, sou victoria', 'seu nome': 'meu nome é victoria, como posso te ajudar', 'obrigado': 'por nada =]','obrigada': 'por nada =]',
