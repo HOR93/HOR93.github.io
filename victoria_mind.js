@@ -1,4 +1,6 @@
 const respostas = {
+
+    
     // saudações
     'ola': 'opa tudo bem?', 'olá': 'opa', 'bom dia': 'Opa! bom dia, opa tudo bem?', 'tudo bem': 'Opa! tudo bom ? ', 'oi': 'oii! tudo bem ?', 'boa noite': 'boa noite!', 
 
@@ -16,7 +18,7 @@ const respostas = {
     'semestre': 'ta complicado né ? Não sou o chatGPT, mas dependendo acho que posso ajuda-lo(a)', 'professor': 'aposto que tem varios sensacionais e outros que são horríveis',
     'ru': 'Sempre bem completo, aqui o site do RU na unb: https://ru.unb.br/index.php/cardapio-refeitorio', 'onibus': 'Aqui os horarios dos relacionados a unb: https://boasvindas.unb.br/images/Noticias/2018/Documentos/linhas_urbanas_darcy_ribeiro.pdf',
     'bce': 'Lugar favorito do Henrique na UNB, aqui o site para você ver como funciona mesmo: https://bce.unb.br/', 'hh': 'Não consegui encontrar nada sobre essas festas, mas acontecem bastante mesmo', 'passe livre': 'procura um posto do semob mais proximo: https://semob.df.gov.br/postos-do-sba/ ou entre em contato com eles https://mobilidade.brb.com.br/passelivre/pages/index.xhtml',
-    'graduação': 'vai ser complicado e exaustivo, mas mantenha a fé', 'teams': 'aqui o Link: https://www.microsoft.com/pt-br/microsoft-teams/log-in', 'aprender': 'aqui o Link: https://aprender3.unb.br/login/index.php', 'sigaa': 'aqui o Link: https://sigaa.unb.br/sigaa/',
+    'graduação': 'vai ser complicado e exaustivo, mas mantenha a fé', 'teams': 'aqui o Link: https://www.microsoft.com/pt-br/microsoft-teams/log-in', 'aprender': 'aqui o Link: https://aprender3.unb.br/login/index.php', 'sigaa': 'aqui o Link: https://sigaa.unb.br/sigaa/', 'menção': 'na unb funciona assim: SS - (equivalente a 9,0 e 10,0), MS - (equivalente a 7,0 e 8,9), MM - (equivalente a 5,0 e 6,9), MI - (equivalente a 3,0 e 4,9), II - (equivalente a 0,1 e 2,9), SR - (equivalente a 0)',
 
     // calculo 
 
@@ -127,8 +129,6 @@ const respostas = {
 
 
 const chat = document.getElementById('victoria_caixa');
-
-
 const input = document.getElementById('victoria_input');
 const enviar = document.getElementById('enviar_pergunta');
 
@@ -139,47 +139,52 @@ input.addEventListener("keydown", function(event) {
 
  });
 
+function horas_semana(){
 
-const head = document.getElementById('header')
-const data = new Date();
-const hora_atual = data.getHours()
-const dia_atual = String(data.getDate()).padStart(2, '0');
-const dia_semana = data.getDay()
-const mes = String(data.getMonth() + 1).padStart(2, '0');
-const ano = data.getFullYear()
-
-
-let saudação
-if (hora_atual >= 5 && hora_atual < 12) {
-    saudação = 'Bom dia';
-  } else if (hora_atual >= 12 && hora_atual < 18) {
-    saudação = 'Boa tarde';
-  } else {
-    saudação = 'Boa noite';
-  }
+    const head = document.getElementById('header')
+    const data = new Date();
+    const hora_atual = String(data.getHours()).padStart(2, '0');
+    const hora_minutos = String(data.getMinutes()).padStart(2, '0');
+    const dia_atual = String(data.getDate()).padStart(2, '0');
+    const dia_semana = data.getDay()
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear()
 
 
-let semana
-if (dia_semana == 0){
-    semana = 'domingo'
-} else if (dia_semana == 1){
-    semana = 'Segunda Feira'
-} else if (dia_semana == 2){
-    semana = 'Terça feira'
-} else if (dia_semana == 3){
-    semana = 'Quarta feira'
-} else if (dia_semana == 4){
-    semana = 'Quinta feira'
-} else if (dia_semana == 5){
-    semana = 'Sexta feira'
-} else if (dia_semana == 6){
-    semana = 'Sabado'
+    let saudação
+    if (hora_atual >= 5 && hora_atual < 12) {
+        saudação = 'Bom dia';
+    } else if (hora_atual >= 12 && hora_atual < 18) {
+        saudação = 'Boa tarde';
+    } else {
+        saudação = 'Boa noite';
+    }
+
+
+    let semana
+    if (dia_semana == 0){
+        semana = 'Domingo'
+    } else if (dia_semana == 1){
+        semana = 'Segunda Feira'
+    } else if (dia_semana == 2){
+        semana = 'Terça feira'
+    } else if (dia_semana == 3){
+        semana = 'Quarta feira'
+    } else if (dia_semana == 4){
+        semana = 'Quinta feira'
+    } else if (dia_semana == 5){
+        semana = 'Sexta feira'
+    } else if (dia_semana == 6){
+        semana = 'Sabado'
+    }
+
+
+    head.innerHTML = `${saudação}, henrique. <br>${dia_atual}/${mes}/${ano}  |  ${semana} - ${hora_atual}:${hora_minutos}`
+
 }
 
-
-head.innerHTML = `${saudação}, henrique. <br>${dia_atual}/${mes}/${ano}  |  ${semana} - ${hora_atual}H`
-
-
+horas_semana();
+setInterval(horas_semana, 1000);
 
 enviar.addEventListener("click", enviar_pergunta);
 
