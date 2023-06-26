@@ -23,18 +23,17 @@ h2{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
   font-style: bold;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ffffff;
   
 }
 
 #victoria_caixa {
   background-color: #7a7272;
-  border: 1px solid black;
+  border: 3px solid rgb(212, 198, 52);
   height: 420px;
   overflow: scroll;
   padding: 5px;
   margin: 20px;
-  border: 5px solid black;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -43,7 +42,7 @@ h2{
 #victoria_input {
   padding: 10px;
   width: 70%;
-  border: 1px solid rgb(24, 139, 22);
+  border: 1px solid rgb(200, 223, 53);/* border: 1px solid rgb(24, 139, 22); */
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0 auto;
